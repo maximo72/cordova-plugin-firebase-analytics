@@ -9,7 +9,7 @@
     NSLog(@"Starting Firebase Analytics plugin");
 
     if(![FIRApp defaultApp]) {
-        [FIRApp configure];
+        // [FIRApp configure];  // Max: This can fails the fcm plugin registration
     }
 }
 
